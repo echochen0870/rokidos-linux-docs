@@ -8,7 +8,7 @@ bootanim配置文件位于`/etc/bootanim.conf`下，其中的项目：
 
 * ### max_bright:
 
-    最大亮度，控制灯光最亮的光亮。
+    最大亮度，控制灯光最大的亮度。
 
     default value:100
 

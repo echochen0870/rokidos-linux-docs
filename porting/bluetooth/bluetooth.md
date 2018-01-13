@@ -29,7 +29,7 @@ robot/services/btflinger：以上代码包实际所包含的的代码所在
 * 删掉 output/banban\_m\_a113/build/btflinger/
 * 再重新make
 
-# 如果模组相同，只是迁移平台：
+## 如果模组相同，只是迁移平台：
 
 将相关代码目录直接覆盖过去即可：
 
@@ -41,7 +41,7 @@ rokid\_br\_external/package/btflinger
 
 robot/services/btflinger
 
-# 如果模组切换，则还需要增加的步骤：
+## 如果模组切换，则还需要增加的步骤：
 
 修改robot/services/btflinger/src/bsa\_server\_service\_ctl.sh
 
@@ -51,13 +51,13 @@ robot/services/btflinger
 
 注意：目前只支持在博通的模组间切换，如果是非博通的模组目前暂时不支持。
 
-# 如果厂商需要定义自己的BLE的UUID：
+## 如果厂商需要定义自己的BLE的UUID：
 
 修改rokid\_br\_external/configs/rokid\_common\_packages.frag文件
 
 ![](/files/bluetooth/uuid.png)
 
-# 如何确认蓝牙服务已经正常：
+## 如何确认蓝牙服务已经正常：
 
 ADB shell中敲入以下命令：
 
@@ -68,15 +68,15 @@ ADB shell中敲入以下命令：
 
 * bluetooth\_test
 
-  然后会有列表显示出来，可以选择各个接口进行验证（需要和 应用开发--&gt; C/C++ ---&gt; 蓝牙服务章节联系起来一起理解，分析
+  然后会有列表显示出来，可以选择各个接口进行验证（需要和 应用开发--&gt; C/C++ ---&gt; 蓝牙服务）章节联系起来一起理解，分析
 
 Exa\(测试BLE是否正常\)：
 
 * 在bluetooth\_test中，选择：
 
-* 1.ble
+* 1. ble
 
-* 2 ble rsp
+* 2. ble rsp
 
 * 手机上用BLEdebuger软件搜，能搜到my bt ble test device这个设备，点进去，会看见3个服务。选择第3个服务，点进去，选择write， 填入字符
 

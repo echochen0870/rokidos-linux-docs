@@ -35,7 +35,7 @@ m_fps：服务端的刷新频率，目前最大30fps,过快刷新灯光数据可
 
   开启：唤醒灯光服务，线程等待写入数据
   
-  关闭：此client端无法对灯光服务操作写入。当所有灯光client都关闭时，灯光服务立即进入睡眠
+  关闭：此client端无法对灯光服务操作写入。当client端所有灯光都关闭时，灯光服务立即进入睡眠
   
   注意：请在设置灯光数据前开启，在设置完数据后(延迟10-20ms)关闭
 
@@ -65,7 +65,7 @@ m_fps：服务端的刷新频率，目前最大30fps,过快刷新灯光数据可
 
 ## lumeneffects
 
-lumeneffects基于lumenflinger服务提供了一些简单的灯光效果接口。代码位于主要接口如下：（由LumenEffects.cpp、LumenEffects.h定义）。
+lumeneffects基于lumenflinger服务提供了一些简单的灯光效果接口。代码的主要接口如下：（由LumenEffects.cpp、LumenEffects.h定义）。
 
 ### 提供的效果：
 
@@ -183,7 +183,7 @@ lumeneffects基于lumenflinger服务提供了一些简单的灯光效果接口�
 
 - **void InitLayers\(int speed\)**
 
-  初始化图层信息，在目前版本中负责设定动画的延迟，可用于自定义动画。可在以后增添内容
+  初始化图层信息，在目前版本中负责设定动画的延迟，用于自定义动画。以后会增添内容
 
 - **bool LayerAddBackground\(u8\* color\)**
 
