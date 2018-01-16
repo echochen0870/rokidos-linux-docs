@@ -29,7 +29,7 @@ robot/services/btflinger：以上代码包实际所包含的代码所在
 * 删掉 output/banban\_m\_a113/build/btflinger/
 * 再重新make
 
-## 如果模组相同，只是迁移平台：
+# 如果模组相同，只是迁移平台：
 
 将相关代码目录直接覆盖过去即可：
 
