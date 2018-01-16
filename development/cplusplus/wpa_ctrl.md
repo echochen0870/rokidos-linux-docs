@@ -51,7 +51,7 @@ int wifi_disable_all_network();
 
 ```
 
-同时我们提供了一个通用接口，上述所有接口均是通过这个接口来实现的。后续也会丰富更多的 WiFi 接口。
+同时我们提供了一个通用接口，上述所有接口均是通过这个接口来实现的。
 
 ```c
 // current supplicant cmd
