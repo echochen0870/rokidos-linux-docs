@@ -7,7 +7,7 @@ lumenflinger为灯光服务程序，源码路径:robot\services\lumenflinger
 
 客户端：LumenClient.cpp LumenLight.cpp LumenEffects.cpp
 
-其中LumenLight.cpp、LumenEffects.cpp 为灯光APP提供调用接口，下面分别介绍
+其中LumenLight.cpp、LumenEffects.cpp 为灯光 APP 提供调用接口，下面分别介绍
 
 
 ## LumenLight
