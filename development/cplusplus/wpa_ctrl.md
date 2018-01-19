@@ -51,7 +51,7 @@ int wifi_disable_all_network();
 
 ```
 
-我们同时提供了一个通用接口，我们上述所有接口均是通过这个接口来实现的。后续我们也会丰富更多的 WiFi 接口。
+同时我们提供了一个通用接口，上述所有接口均是通过这个接口来实现的。
 
 ```c
 // current supplicant cmd
@@ -77,7 +77,7 @@ int wifi_send_command(int cmd, void *value, int val_len, void *res, int res_len)
 
 ## AP模式API
 
-对于目前支持 ROKIDOS 的几款官方开发板，采用的 WiFi 模组是博通公司的 AP6255 芯片，博通公司的 wifi 芯片 AP 与 STATION 切换需要对网卡驱动进行卸载重装，所以配网方式不建议使用 AP 模式配网，这会造成多次 WiFi 模式的切换，耗时可能比较严重。不过给出以下方法，开发者可以自行配置，进入 AP 模式。
+对于目前支持 RokidOS 的几款官方开发板，采用的 WiFi 模组是“博通”公司的 AP6255 芯片，“博通”公司的 wifi 芯片 AP 与 STATION 切换需要对网卡驱动进行卸载重装，所以配网方式不建议使用 AP 模式配网，这会造成多次 WiFi 模式的切换，耗时可能比较严重。不过给出以下方法，开发者可以自行配置，进入 AP 模式。
 
 首先，buildroot 需要增加 dnsmasq 的软件包。如果配置对应的 config 文件， 以 A113 来讲，对应路径是: buildroot/configs/banban\_m\_a113\_release\_defconfig。
 
@@ -134,9 +134,9 @@ dnsmasq -iwlan0  --dhcp-option=3,192.168.2.1 --dhcp-range=192.168.2.50,192.168.2
 
 RokidOS 配套的开发板支持 WiFi 连接 internet ，系统提供了一些控制 WiFi 连接的接口，配网业务及网络监控服务。设备第一次连接网络需要第三方设备发送 WiFi 相关信息如 SSID ， PSK 和加密方式到设备，第一次联网方式支持如下方式：
 
-### 蓝牙配网
+#### 蓝牙配网
 
-### AP模式配网
+#### AP 模式配网
 
 
 

@@ -16,7 +16,7 @@ int get_recovery_cmd_status(struct boot_cmd *cmd);
 int set_recovery_cmd_status(struct boot_cmd *cmd);
 ```
 
-升级需要调用 set_recovery_cmd_status 进入升级模式模式，参数设置如下：
+升级需要调用 set_recovery_cmd_status 进入升级模式，参数设置如下：
  1. boot_cmd.boot_mode 设置为 BOOTMODE_RECOVERY ；
  2. boot_cmd.recovery_path 为 OTA 镜像的路径（放在 /data 目录下，注意 OTA 镜像是 rokid_upgrade_package.img ）；
  3. boot_cmd.recovery_state 设置为 BOOTSTATE_READY ；
