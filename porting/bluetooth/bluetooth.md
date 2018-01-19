@@ -51,7 +51,7 @@ robot/services/btflinger
 
 注意：目前只支持在博通的模组间切换，如果是非博通的模组目前暂时不支持。
 
-## 如果厂商需要定义自己的BLE的UUID：
+## 如果厂商需要定义自己的 BLE 的 UUID：
 
 修改rokid\_br\_external/configs/rokid\_common\_packages.frag文件
 
