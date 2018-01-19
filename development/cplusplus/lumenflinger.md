@@ -183,7 +183,7 @@ lumeneffects基于lumenflinger服务提供了一些简单的灯光效果接口�
 
 - **void InitLayers\(int speed\)**
 
-  初始图层信息，在目前版本中负责设定动画的延迟，自定义LED动画。
+  初始图层信息，在目前版本中负责设定动画的延迟，自定义 LED 动画。
 
 - **bool LayerAddBackground\(u8\* color\)**
 
