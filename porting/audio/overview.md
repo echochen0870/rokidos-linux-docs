@@ -24,7 +24,7 @@ RokidOS 目前使用 PulseAudio 作为我们的基础音频系统，在 PulseAud
 
 ## PulseAudio 和 Jack 本质
 
-PulseAudio 和 Jack 技术上称为“声音服务”，它们可以发送和接收不同应用程序的许多音频通道。任何需要通过 ALSA 接口的来使用音频的应用，一般都会使用 PulseAudio 或者 JACK，据统计有99%的现代通用音频应用都是使用的是 PulseAuido，其他特殊的音频应用使用的是 JACK。
+PulseAudio 和 Jack 技术上称为“声音服务”，它们可以发送和接收不同应用程序的许多音频通道。任何需要通过 ALSA 接口的来使用音频的应用，一般都会使用 PulseAudio 或者 JACK，据统计有99%的现代通用音频应用都使用的是 PulseAuido，其他特殊的音频应用使用的是 JACK。
 
 ## JACK Audio Connection Kit
 
