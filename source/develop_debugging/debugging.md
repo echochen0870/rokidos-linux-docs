@@ -9,6 +9,7 @@
 
 2. adb 登录（插上开发板电源供电口typec线)<br>
 通过命令 adb shell 即可登录
+（如果在 windows 系统下 adb shell 找不到可用设备，可前往谷歌下载最新驱动：https://developer.android.com/studio/releases/platform-tools.html#revisions）
 
 ## 日志查看
 目前系统所有日志由 systemd journalctl 服务来接管，可以通过journalctl -h 来查看该服务用法，常见命令如下：<br>
@@ -35,9 +36,9 @@ RokidOS 目前使用 systemd 来管理系统所有服务，重要服务如 vui�
 
 2. 属性设置，相关命令为 setprop xxx value （注意 ro（只读）属性不能设置）
 
-##播放／录音
+## 播放／录音
 
-1. 播放（wav文件）<br>
+1. 播放（wav文件）
 使用 pulseaudio paplay 播放, 直接输入命令 paplay xxx.wav<br>
 使用 alsa aplay 播放，由于 pulseaudio 独占了声卡，需要输入如下两条命令：<br>
 ```
@@ -45,7 +46,7 @@ systemctl stop pulseaudio
 aplay xxx.wav
 ```
 
-2. 录音<br>
+2. 录音
 由于服务 openvoice_proc 独占了录音接口，需要录音输入如下两条命令来：<br>
 ```
 systemctl stop openvoice_proc
