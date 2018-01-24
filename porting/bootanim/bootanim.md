@@ -22,7 +22,7 @@ bootanim配置文件位于`/etc/bootanim.conf`下，其中的项目：
 
     每次delay时间，主要用于控制灯光持续时间。
 
-    default value:40000
+    default value:40000 微秒
 
 * ###colorR、colorG、colorB:
 
