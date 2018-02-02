@@ -9,19 +9,14 @@ RokidOS 会读取 /data/system/device.json 中的信息来初始化一些系统�
    - `text` {String} 激活词的汉字。
    - `pinyin` {String} 激活词拼音字符，如："ruo4qi2"。
 
-比如：我想用 “小琪小琪” 作为激活词，就添加如下代码！
+比如：我想用 “小琪小琪” 作为激活词，就在 device.json 里添加如下代码！
 ```
 {
-
 	"namePrefix" : "Rokid-ble",
-
 	"triggerWord" :{
-
 		"text" : "小琪小琪",
-
 		"pinyin" : "xiao3qi2xiao3qi2"
-
-		}	
+	}	
 }
 ```
 **保存后重启生效。**
