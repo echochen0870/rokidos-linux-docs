@@ -97,7 +97,7 @@ output/<开发板型号>/images
 A113 4mic 版本 Linux 镜像
 
 ```
-ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a113_audio/amlogic_linux_audio_baba_m2_a113_dev/dev/107/
+ftp://ftp-customer.rokid-inc.com:9921/images/amlogic_a113_audio/amlogic_linux_audio_baba_m2_a113_dev/dev/300/
 ```
 
 A113 6mic 版本 Linux 镜像
